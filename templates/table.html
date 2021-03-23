@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            fraudulent records
+        </title>
+    </head>
+    <body>
+        {% import csv as csv %}
+        <table>
+            {% with open(file, 'r') as f:
+                Reader = csv.reader(f)
+                Data = list(Reader)
+                for data in Data :%}
+                    <tr>
+                    <!-- print(data) -->
+                    <td>{{data[1]}}</td>
+                    <td>{{data[2]}}</td>
+                </tr>
+                <!-- {%file_n.close()%} -->
+                {%endfor%}
+                {%end%}
+
+        </table>
+        <!-- <p>Processed {{line_count}} lines</p> -->
+    </body>
+</html>

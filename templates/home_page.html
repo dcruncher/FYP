@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            fraud detection - file upload
+        
+        </title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/button1.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/test.css')}}">
+        
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/dataTables.bootstrap4.min.css')}}">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css')}}"> -->
+    
+    <body>
+        <header class="text-center text-white">
+            <h1 class="display-4">Credit Card Fraud Detection</h1>
+            <p class="lead mb-0"> Details of Potential Fraudulent Transactions from the uploaded file</p>
+            <!-- <p class="font-italic">Snippet By
+              <a href="https://bootstrapious.com" class="text-white">
+                <u>Bootstrapious</u>
+              </a>
+            </p> -->
+          </header>
+        <div >
+            <center>
+                <br>
+                <br>
+                <br>
+        <form action= "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+            
+            <input type="file" name ="file"  value=""/>
+    
+            <input type="submit" class="file-upload-field" />
+        </form>
+    </center>
+        </div>
+    </body>
+</html>

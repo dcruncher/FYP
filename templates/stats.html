@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>
+    get stats
+  </title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/test.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/dataTables.bootstrap4.min.css')}}">
+  
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+   <script src="{{ url_for('static',filename='styles/test.js')}}"></script>
+   <script src="{{ url_for('static',filename='styles/bootstrap.bundle.min.js')}}"></script>
+   <script src="{{ url_for('static',filename='styles/jquery.dataTables.min.js')}}"></script>
+   <script src="{{ url_for('static',filename='styles/dataTables.bootstrap4.min.js')}}"></script>
+
+   <!-- <script src="jquery-3.3.1.slim.min.js"></script> -->
+
+</head>
+<body>
+<div class="container py-5">
+  <header class="text-center text-white">
+    <h1 class="display-4">Statistics</h1>
+    <p class="lead mb-0">Fraudulent transactions classified by gender, age, and deciding features</p>
+    
+    <!-- <button style="float: right">Get statistics</button> -->
+  </header>
+  <div class="row py-5" >
+    <div class="col-lg-5 mx-auto">
+      <div class="card rounded shadow border-0">
+        <p>Gender Statistics</p><br>
+    <img src="{{url_for('static',filename='gender_stat.jpg')}}"> 
+  </div>
+  </div>
+  </div>
+
+  <div class="row py-5" style="float: right;">
+    <div class="col-lg-5 mx-auto">
+      <div class="card rounded shadow border-0">
+    <p>hello</p>
+    <p>hello again</p>
+  </div>
+  </div>
+  </div>
+<br><br>
+  <div class="row py-5" >
+    <div class="col-lg-5 mx-auto">
+      <div class="card rounded shadow border-0">
+    <p>hello</p>
+    <p>hello again</p>
+  </div>
+  </div>
+  </div>
+
+
+</div>
+</body>
+</html>
