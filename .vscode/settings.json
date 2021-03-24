@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\HP\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
     "workbench.commandPalette.preserveInput": true,
     "cmake.configureOnOpen": false
 }

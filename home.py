@@ -4,10 +4,10 @@ import io,csv,pickle
 import numpy as np
 import pandas as pd
 from zipfile import ZipFile 
-import lightgbm as lgb
+#import lightgbm as lgb
 from sklearn.tree import DecisionTreeClassifier
 import pickle
-from xgboost import XGBClassifier
+#from xgboost import XGBClassifier
 import matplotlib.pyplot as plt
 app = Flask(__name__)
 
